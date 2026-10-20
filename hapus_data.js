@@ -15,7 +15,7 @@ const Test = mongoose.model('Test', testSchema, 'belajar_mongodb');
 async function hapusData() {
     try {
         const hasil = await Test.deleteOne({
-            pesan: "Halo aku arolan"
+            pesan: "halo aku pesan dari noejs"
         });
 
         console.log('data berhasil dihapus', hasil)
